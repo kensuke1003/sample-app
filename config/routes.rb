@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   
   delete 'todolists/:id' => 'todolists#destroy', as: 'destroy_todolist'
   
-  resources :blogs
-  root 'todolists#new' #トップページをblogsコントローラのindexアクションに設定
-
+  resources :posts
+  root  'todolists#new' #トップページをblogsコントローラのindexアクションに設定
 end
